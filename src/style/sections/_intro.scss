@@ -1,8 +1,8 @@
 @use '../abstract/index' as *;
 
 .intro {
-    margin-top: 56px;
-    min-height: calc(100vh - 56pxs);
+    margin: 56px 0 6vh 0;
+    //min-height: calc(100vh - 56px);
 
     &__img-container {
         width: 100%;

@@ -13,6 +13,20 @@
     text-transform: uppercase;
 }
 
+@mixin roboto-regular-16 {
+    @include roboto-regular();
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -.3px
+}
+
+@mixin roboto-bold-16 {
+    @include roboto-bold();
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -.3px
+}
+
 @mixin roboto-bold-20 {
     @include roboto-bold();
     font-size: 1.25rem;
@@ -29,4 +43,5 @@
     @include roboto-bold();
     font-size: 2.5rem;
     line-height: 1.2;
+    letter-spacing: -.5px;
 }

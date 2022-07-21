@@ -1,0 +1,47 @@
+[
+    {
+        "title": "News titile 1",
+        "subtitle": "News subtitle 1",
+        "date": "24. May",
+        "article": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta ullam omnis velit dolores culpa alias quos, id repudiandae iure amet cupiditate incidunt delectus quibusdam fugit, consequuntur aperiam libero unde suscipit in voluptas eos molestiae! Aspernatur ducimus beatae blanditiis libero iste impedit ab velit quam fugiat rerum. Reprehenderit, iste debitis?",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae cupiditate porro quae harum quo natus veniam velit, dolorum dolor quidem alias aliquid ratione, omnis expedita, tenetur animi illum fuga quam repellat. Quam pariatur, necessitatibus aliquam ducimus doloremque iure aut! Fuga eius consequuntur nihil consectetur mollitia. Quos, vel maxime atque a voluptates voluptatibus reiciendis laborum ullam obcaecati odit. Reprehenderit, error. Eveniet aliquid ratione ad at quod deserunt molestiae enim expedita temporibus possimus officia totam, eius placeat magni aperiam! Atque, debitis!",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta ullam omnis velit dolores culpa alias quos, id repudiandae iure amet cupiditate incidunt delectus quibusdam fugit, consequuntur aperiam libero unde suscipit in voluptas eos molestiae! Aspernatur ducimus beatae blanditiis libero iste impedit ab velit quam fugiat rerum. Reprehenderit, iste debitis?"
+        ],
+        "images": [
+            "https://images.pexels.com/photos/5370918/pexels-photo-5370918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/5416234/pexels-photo-5416234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/5370913/pexels-photo-5370913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ]
+    },
+    {
+        "title": "News titile 2",
+        "subtitle": "News subtitle 2",
+        "date": "25. May",
+        "article": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta ullam omnis velit dolores culpa alias quos, id repudiandae iure amet cupiditate incidunt delectus quibusdam fugit, consequuntur aperiam libero unde suscipit in voluptas eos molestiae! Aspernatur ducimus beatae blanditiis libero iste impedit ab velit quam fugiat rerum. Reprehenderit, iste debitis?",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae cupiditate porro quae harum quo natus veniam velit, dolorum dolor quidem alias aliquid ratione, omnis expedita, tenetur animi illum fuga quam repellat. Quam pariatur, necessitatibus aliquam ducimus doloremque iure aut! Fuga eius consequuntur nihil consectetur mollitia. Quos, vel maxime atque a voluptates voluptatibus reiciendis laborum ullam obcaecati odit. Reprehenderit, error. Eveniet aliquid ratione ad at quod deserunt molestiae enim expedita temporibus possimus officia totam, eius placeat magni aperiam! Atque, debitis!",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta ullam omnis velit dolores culpa alias quos, id repudiandae iure amet cupiditate incidunt delectus quibusdam fugit, consequuntur aperiam libero unde suscipit in voluptas eos molestiae! Aspernatur ducimus beatae blanditiis libero iste impedit ab velit quam fugiat rerum. Reprehenderit, iste debitis?"
+        ],
+        "images": [
+            "https://images.pexels.com/photos/5370918/pexels-photo-5370918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/5416234/pexels-photo-5416234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/5370913/pexels-photo-5370913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ]
+    },
+    {
+        "title": "News titile long 3",
+        "subtitle": "News subtitle 3",
+        "date": "26. May",
+        "article": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta ullam omnis velit dolores culpa alias quos, id repudiandae iure amet cupiditate incidunt delectus quibusdam fugit, consequuntur aperiam libero unde suscipit in voluptas eos molestiae! Aspernatur ducimus beatae blanditiis libero iste impedit ab velit quam fugiat rerum. Reprehenderit, iste debitis?",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae cupiditate porro quae harum quo natus veniam velit, dolorum dolor quidem alias aliquid ratione, omnis expedita, tenetur animi illum fuga quam repellat. Quam pariatur, necessitatibus aliquam ducimus doloremque iure aut! Fuga eius consequuntur nihil consectetur mollitia. Quos, vel maxime atque a voluptates voluptatibus reiciendis laborum ullam obcaecati odit. Reprehenderit, error. Eveniet aliquid ratione ad at quod deserunt molestiae enim expedita temporibus possimus officia totam, eius placeat magni aperiam! Atque, debitis!",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta ullam omnis velit dolores culpa alias quos, id repudiandae iure amet cupiditate incidunt delectus quibusdam fugit, consequuntur aperiam libero unde suscipit in voluptas eos molestiae! Aspernatur ducimus beatae blanditiis libero iste impedit ab velit quam fugiat rerum. Reprehenderit, iste debitis?"
+        ],
+        "images": [
+            "https://images.pexels.com/photos/5370918/pexels-photo-5370918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/5416234/pexels-photo-5416234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/5370913/pexels-photo-5370913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ]
+    }
+]

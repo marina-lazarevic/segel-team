@@ -1,0 +1,58 @@
+@use '../abstract/index' as *;
+
+.events {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    &__teaser {
+        color: $main-dark;
+        padding: $outer-spacing-sm $outer-spacing-sm calc($outer-spacing-sm * 1.5);
+        min-height: 270px;
+        @include d-flex(flex-start, flex-end);
+        flex-direction: column;
+
+        &:nth-of-type(odd){
+            background-color: $light-gray;
+        }
+
+        &:nth-last-of-type(1){
+            height: 370px;
+            background: $light-gray url('../assets/map.png') no-repeat top right;
+            background-size: auto 100%;
+        }
+    }
+
+    &__date-container {
+        @include d-flex(flex-end, flex-start);
+    }
+
+    &__date-icon {
+        height: 1.2rem;
+        width: auto;
+    }
+
+    &__date {
+        @include roboto-bold-16;
+        margin: 0 0 -5px .5rem;
+    }
+
+    &__title {
+        @include roboto-bold-20;
+        color: $main-dark;
+        display: block;
+        margin: 1rem 0 .8rem;
+    }
+
+    &__summary {
+        @include roboto-regular-16;
+    }
+
+    &__teaser:last-of-type > &__date-container > &__date-icon {
+        display: none;
+    }
+
+    &__teaser:last-of-type > &__date-container > &__date {
+        @include roboto-bold-40;
+        margin-left: 0;
+    }
+}

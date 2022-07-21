@@ -1,5 +1,5 @@
 import './style/main.scss';
-
+import './components/events';
 import banner_img from './assets/banner.webp';
 document.querySelector('#banner-img').src = banner_img;
 
@@ -16,4 +16,4 @@ document.querySelectorAll('#nav .header__anchor').forEach(anchor => {
         nav.classList.remove('header__nav--open');
         nav_btn.classList.remove('header__btn--close');
     })
-})
+});
