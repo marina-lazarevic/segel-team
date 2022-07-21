@@ -1,0 +1,125 @@
+@use '../abstract/index' as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include d-flex(center, space-between);
+    padding: .9rem $outer-spacing-sm;
+    background-color: $main-dark;
+    z-index: 10;
+
+    &__branding {
+        @include roboto-bold-20;
+        color: $main-light;
+        position: relative;
+    }
+
+    &__branding-regular {
+        font-weight: 400;
+    }
+
+    &__btn {
+        position: relative;
+        height: 21px;
+        width: 30px;
+        transition: transform .3s ease-out 0s;
+
+        &--close {
+            transition-delay: .3s;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__bar {
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $main-light;
+        transition: all .3s ease-out;
+
+        &:nth-of-type(1){
+            top: 0;
+        }
+
+        &:nth-of-type(2){
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:nth-of-type(3){
+            top: calc(100% - 2.5px);
+        }
+    }
+
+    &__btn--close > &__bar {
+        &:nth-of-type(1){
+            transform: rotate(45deg) translate(7px, 6px);
+        }
+
+        &:nth-of-type(2){
+            width: 0;
+        }
+
+        &:nth-of-type(3){
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+    }
+
+    &__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        background-color: $main-dark;
+        padding: $outer-spacing-sm;
+        @include d-flex(flex-start, flex-end);
+        flex-direction: column;
+        transition: height .3s ease-out 0s;
+
+        &--open {
+            height: 100%;
+            opacity: 1;
+        }
+    }
+
+    &__anchor {
+        @include roboto-bold-33;
+        color: $main-light;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        &:not(:last-of-type){
+            margin-bottom: $outer-spacing-sm;
+        }
+
+        .displaced {
+            display: block;
+            transform: translateY(100%);
+            transition: transform .3s ease-out 0s;
+        }
+    }
+
+    &__nav--open > &__anchor {
+        .displaced {
+            transform: translateY(0);
+        }
+    }
+
+    $i: 1;
+    @for $i from 1 through 5 {
+        &__nav--open > &__anchor:nth-last-of-type(#{$i}){
+            .displaced {
+                transition-delay: #{$i * 0.12}s;
+            }
+        }
+    }
+
+    &__container > &__anchor{
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@mixin roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+@mixin roboto-bold-20 {
+    @include roboto-bold();
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+@mixin roboto-bold-33 {
+    @include roboto-bold();
+    font-size: 2.06rem;
+    line-height: 1.4;
+}
