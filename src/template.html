@@ -7,6 +7,23 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="header__nav">
+            <a href="#" class="header__anchor">Home</a>
+            <a href="#events" class="header__anchor">Events</a>
+            <a href="#about" class="header__anchor">About</a>
+            <a href="#crew" class="header__anchor">Crew</a>
+            <a href="#contact" class="header__anchor">Contact</a>
+        </nav>
+        <div class="header__container">
+            <a href="#contact" class="header__anchor">Follow us</a>
+            <a href="#" class="header__branding">Segel<span class="header__branding-regular">Team</span></a>
+        </div>
+        <button class="header__btn" id="menu-btn">
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+        </button>
+    </header>
 </body>
 </html>
