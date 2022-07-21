@@ -1,0 +1,42 @@
+@use '../abstract/index' as *;
+
+.intro {
+    margin-top: 56px;
+    min-height: calc(100vh - 56pxs);
+
+    &__img-container {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        @include d-flex(center, center);
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    }
+
+    &__img {
+        @media screen and (orientation: portrait) {
+            height: 110%;
+            width: auto;
+            display: block;
+            transform: translateX(5%);
+        }
+        @media screen and (orientation: landscape) {
+            height: auto;
+            width: 110%;
+        }
+    }
+
+    &__text-container {
+        padding: 0 $outer-spacing-sm;
+        text-align: center;
+        color: $main-dark;
+    }
+
+    &__title {
+        @include roboto-bold-40;
+        margin: 6vh 0 2.5vh;
+    }
+
+    &__subtitle {
+        @include roboto-bold-20;
+    }
+}
