@@ -19,6 +19,7 @@ $screen-xxl: 123.75rem; //1980px
 $outer-spacing-sm: 1.3rem; //20
 // $outer-spacing-md: 2.2rem; //35
 // $outer-spacing-lg: 3.5rem; //56
+$col-sm: calc((100vw - 2.6rem) / 6 );
 
 @mixin d-flex($a, $j) {
     display: flex;

@@ -17,3 +17,5 @@ document.querySelectorAll('#nav .header__anchor').forEach(anchor => {
         nav_btn.classList.remove('header__btn--close');
     })
 });
+
+import './components/about_slider';

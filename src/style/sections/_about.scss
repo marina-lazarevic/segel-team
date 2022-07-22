@@ -1,0 +1,84 @@
+@use '../abstract/index' as *;
+
+.about {
+    padding: 0 $outer-spacing-sm;
+    color: $main-dark;
+
+    &__title {
+        @include roboto-bold-33;
+        margin: 1.8rem 0;
+    }
+
+    &__subtitle {
+        @include roboto-bold-20;
+        margin-bottom: .8rem
+    }
+
+    &__text {
+        @include roboto-regular-16;
+        margin-bottom: 1.5rem;
+    }
+
+    &__img-sm {
+        display: none;
+    }
+
+    &__slider {
+        margin: 7vh 0;
+    }
+
+    &__slide-img-container {
+        width: calc(100% - $col-sm);
+        height: 55vh;
+        overflow: hidden;
+        @include d-flex(center, center);
+        margin: 0 0 0 auto;
+    }
+
+    &__slide-img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__slide-text-container {
+        padding: 15vh $outer-spacing-sm 8vh;
+        background-color: $light-gray;
+        color: $main-dark;
+        margin-top: -10vh;
+    }
+
+    &__slide-name {
+        @include roboto-bold-20;
+        margin-bottom: .7rem;
+    }
+
+    &__slide-role {
+        @include roboto-bold-16;
+        opacity: .5;
+        margin-bottom: .7rem;
+    }
+
+    &__slider-controls {
+        @include d-flex(center, center);
+        margin-top: -32.5px;
+    }
+
+    &__btn {
+        height: 65px;
+        width: 65px;
+        background-color: $highlight-orange;
+        @include d-flex(center, center);
+
+        img {
+            width: 25px;
+            height: auto;
+        }
+
+        &#about-next {
+            img {
+                display: block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

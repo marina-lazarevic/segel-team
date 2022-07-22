@@ -1,10 +1,6 @@
 import json from '../data/events.json';
 import calendar_icon from '../assets/calendar.svg';
-
 const container = document.querySelector('#events');
-
-console.log(json)
-
 json.forEach(event => {
     let {title, subtitle, date, article, images} = event;
     let summary = article[0].slice(0, 80);    

@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Stephan Davila",
+        "role": "Captain",
+        "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur dolore sit quaerat illum ab quibusdam quam blanditiis.",
+        "image": "https://images.pexels.com/photos/5370860/pexels-photo-5370860.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "name": "Tayler Warren",
+        "role": "1st Mate",
+        "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur dolore sit quaerat illum ab quibusdam quam blanditiis.",
+        "image": "https://images.pexels.com/photos/5416484/pexels-photo-5416484.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "name": "Denis Carlson",
+        "role": "2nd Mate",
+        "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur dolore sit quaerat illum ab quibusdam quam blanditiis.",
+        "image": "https://images.pexels.com/photos/5416488/pexels-photo-5416488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+]
+

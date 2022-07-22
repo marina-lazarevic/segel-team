@@ -1,6 +1,7 @@
 @use './sections/header';
 @use './sections/intro';
 @use './sections/events';
+@use './sections/about';
 
 * {
     padding: 0;
@@ -26,3 +27,6 @@ button {
     }
 }
 
+section:not(.intro) {
+    margin-bottom: 15vh;
+}
