@@ -1,6 +1,7 @@
 import banner_img from './assets/banner.webp';
 import './style/main.scss';
 import './components/events';
+import './components/fetch_crew';
 
 document.querySelector('#banner-img').src = banner_img;
 
