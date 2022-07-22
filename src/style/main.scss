@@ -2,6 +2,7 @@
 @use './sections/intro';
 @use './sections/events';
 @use './sections/about';
+@use './sections/crew';
 
 * {
     padding: 0;
@@ -25,8 +26,4 @@ button {
     &:hover {
         cursor: pointer;
     }
-}
-
-section:not(.intro) {
-    margin-bottom: 15vh;
 }

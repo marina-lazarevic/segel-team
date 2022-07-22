@@ -1,6 +1,7 @@
+import banner_img from './assets/banner.webp';
 import './style/main.scss';
 import './components/events';
-import banner_img from './assets/banner.webp';
+
 document.querySelector('#banner-img').src = banner_img;
 
 const nav_btn = document.querySelector('#menu-btn');

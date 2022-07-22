@@ -3,6 +3,7 @@
 .events {
     display: flex;
     flex-wrap: wrap-reverse;
+    margin-bottom: 15vh;
 
     &__teaser {
         color: $main-dark;

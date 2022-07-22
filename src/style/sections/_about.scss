@@ -3,6 +3,7 @@
 .about {
     padding: 0 $outer-spacing-sm;
     color: $main-dark;
+    margin-bottom: 15vh;
 
     &__title {
         @include roboto-bold-33;
@@ -30,6 +31,7 @@
     &__slide-img-container {
         width: calc(100% - $col-sm);
         height: 55vh;
+        min-height: 460px;
         overflow: hidden;
         @include d-flex(center, center);
         margin: 0 0 0 auto;
