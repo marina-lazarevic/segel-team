@@ -26,6 +26,10 @@
         position: relative;
     }
 
+    &__filters {
+        margin-bottom: .5rem;
+    }
+
     &__title-container::before {
         content: '';
         height: 1px;
@@ -88,7 +92,7 @@
         height: 65px;
         width: 180px;
         display: block;
-        margin: 3rem auto 0 auto;
+        margin: 4rem auto 0 auto;
 
         &:disabled {
             opacity: .5;
@@ -104,7 +108,7 @@
     &__error-description {
         @include roboto-bold-16;
         text-transform: none;
-        margin-bottom: 6rem;
+        margin-bottom: 2.5rem;
     }
 
     &__error-msg,
@@ -117,6 +121,10 @@
     &__members-container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
+
+        &--err {
+            grid-template-columns: 100%;
+        }
     }
 
     &__member {
@@ -129,6 +137,7 @@
         overflow: hidden;
         @include d-flex(center, center);
         position: relative;
+        filter: grayscale(100%);
 
         &::before {
             content: '';
@@ -140,13 +149,13 @@
             background-color: #000;
             opacity: .3;
             z-index: 2;
+            transition: inherit;
         }
     }
 
     &__member-img {
         width: 100%;
         height: auto;
-        filter: grayscale(100%);
     }
 
     &__member-info {
@@ -154,20 +163,24 @@
         width: 100%;
         height: 100%;
         top: 0;
+        left: 100%;
         @include d-flex(flex-start, flex-end);
         flex-direction: column;
         padding: 10px;
         color: $main-dark;
-        opacity: 0; //remove
+        z-index: 3;
+        opacity: 0;
+        z-index: -1;
 
         &::before {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 0;
             height: 100%;
             background-color: $main-light;
             top: 0;
             left: 0;
+            z-index: -1;
         }
         
         * {
@@ -190,13 +203,59 @@
         @include roboto-regular-16;
     }
 
-    @media screen and (max-width: $screen-md){
-        margin-bottom: 10vh;    
-        &__member:nth-of-type(odd) > &__member-info {
-            left: 100%;
+    &__member-name, &__member-role, &__member-bio {
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+
+        .displaced {
+            display: block;
+            transform: translateY(100%);
         }
+    }
+
+    &__member:hover > &__img-container {
+        transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 0.88);
+        filter: grayscale(0%);
+        &:before {
+            opacity: 0;
+        }
+    }
+
+    &__member:hover > &__member-img-container {
+        transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 0.88);
+        filter: grayscale(0%);
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &__member:hover > &__member-info {
+        opacity: 1;
+        z-index: 2;
+        &::before {
+            transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 0.88);
+            width: 100%;
+        }
+    }
+
+    &__member:hover > &__member-info > &__member-name,
+    &__member:hover > &__member-info > &__member-role,
+    &__member:hover > &__member-info > &__member-bio {
+        .displaced {
+            transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 0.88) 0.15s;
+            transform: translateY(0);
+        }
+    }
+
+    @media screen and (max-width: $screen-md){
         &__member:nth-of-type(even) > &__member-info {
-            left: -100%;
+            left: unset;
+            right: 100%;
+            &::before {
+                left: unset;
+                right: 0;
+            }
         }
     }
 

@@ -1,5 +1,4 @@
 import json from '../data/founders.json';
-import arrow_icon from '../assets/arrow.svg';
 
 let s_img = document.querySelector('#slide-img');
 let s_name = document.querySelector('#slide-name');
@@ -20,7 +19,7 @@ let i = 0;
 fillSlide(json[i]);
 
 document.querySelectorAll('.about__btn').forEach(btn => {
-    btn.innerHTML = `<img src="${arrow_icon}" alt="arrow icon" class="about__btn-img">`;
+    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="about__btn-img" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>`;
     btn.addEventListener('click', () => {
         let o = i;
         btn.id == 'about-next' ? i++ : i--;

@@ -71,13 +71,13 @@
         background-color: $highlight-orange;
         @include d-flex(center, center);
 
-        img {
-            width: 25px;
+        svg {
+            width: 30px;
             height: auto;
         }
 
         &#about-next {
-            img {
+            svg {
                 display: block;
                 transform: rotate(180deg);
             }

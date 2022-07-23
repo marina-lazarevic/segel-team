@@ -18,6 +18,7 @@ async function fetchCrewData(page, limit) {
         <h3 class="crew__error-msg">Sorry, an error occurred!</h3>
         <h4 class="crew__error-description">Crew data is currently unavailable.</h4>
         `;
+        crew_container.classList.add('crew__members-container--err')
         load_btn.disabled = true;
     }
 }
@@ -32,12 +33,15 @@ function renderCrewMembers(members) {
                 <img src="${image}" alt="${name}" class="crew__member-img">
             </div>
             <div class="crew__member-info">
-                <h4 class="crew__member-name">${name}</h4>
-                <p class="crew__member-role">${duties}</p>
-                <p class="crew__member-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <h4 class="crew__member-name"><span class="displaced">${name}</span></h4>
+                <p class="crew__member-role"><span class="displaced">${duties}</span></p>
+                <p class="crew__member-bio"><span class="displaced">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></p>
             </div>
         </div>
         `
+    })
+    document.querySelectorAll('.crew__btn--active').forEach(btn => {
+        filterMembers(btn.id)
     })
     scaleTumbnail()
 }
@@ -57,9 +61,6 @@ filter_btns.forEach(btn => {
 load_btn.addEventListener('click', () => {
     page++;
     xhttp.open("GET", fetchCrewData(page, limit), true);
-    document.querySelectorAll('.crew__btn--active').forEach(btn => {
-        btn.id !== 'all' && filterMembers(btn.id);
-    })
 })
 
 function filterMembers(role){
