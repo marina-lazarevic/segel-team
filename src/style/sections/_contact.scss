@@ -1,0 +1,40 @@
+@use '../abstract/index' as *;
+
+.contact {
+    padding: 0 $outer-spacing-sm;
+    color: $main-dark;
+
+    &__title {
+        @include roboto-bold-33;
+        margin-bottom: 3.5rem;
+    }
+
+    &__type {
+        @include roboto-bold-16;
+        opacity: .5;
+        margin-bottom: .5rem;
+    }
+
+    &__item {
+        @include roboto-bold-20;
+        color: $main-dark;
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    &__icon {
+        height: 33px;
+        width: auto;
+        margin-right: 20px;
+        margin-bottom: 10vh;
+    }
+
+    &__copyright {
+        @include roboto-regular-16;
+        margin-bottom: 30px;
+        a {
+            font-weight: 700;
+            color: $main-dark;
+        }
+    }
+}

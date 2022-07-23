@@ -5,7 +5,7 @@
     position: relative;
     margin-top: 20vh;
     padding: 7vh 0;
-
+    
     &::before {
         content: '';
         position: absolute;
@@ -190,7 +190,8 @@
         @include roboto-regular-16;
     }
 
-    @media screen and (max-width: $screen-md){    
+    @media screen and (max-width: $screen-md){
+        margin-bottom: 10vh;    
         &__member:nth-of-type(odd) > &__member-info {
             left: 100%;
         }
